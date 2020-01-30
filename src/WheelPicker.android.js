@@ -28,7 +28,7 @@ export default class WheelPicker extends React.Component<Props> {
   static defaultProps = {
     style: {
       width: 200,
-      height: 150,
+      height: 200,
     },
   }
 
@@ -42,7 +42,6 @@ export default class WheelPicker extends React.Component<Props> {
     return (
       <WheelPickerView
         {...this.props}
-        style={this.props.pickerStyles}
         onChange={this.onItemSelected}
       />
     )
