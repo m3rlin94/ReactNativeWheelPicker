@@ -20,6 +20,7 @@ type Props = {
   itemTextSize?: number,
   selectedItem?: number,
   backgroundColor?: string,
+  pickerStyles?: any,
   onItemSelected?: number => void
 }
 
@@ -41,6 +42,7 @@ export default class WheelPicker extends React.Component<Props> {
     return (
       <WheelPickerView
         {...this.props}
+        style={[defaultProps.style, props.pickerStyles]}
         onChange={this.onItemSelected}
       />
     )
