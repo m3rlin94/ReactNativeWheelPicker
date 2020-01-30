@@ -42,7 +42,7 @@ export default class WheelPicker extends React.Component<Props> {
     return (
       <WheelPickerView
         {...this.props}
-        style={[defaultProps.style, props.pickerStyles]}
+        style={props.pickerStyles}
         onChange={this.onItemSelected}
       />
     )
