@@ -21,6 +21,7 @@ type Props = {
   selectedItem?: number,
   backgroundColor?: string,
   pickerStyles?: any,
+  style?: any,
   onItemSelected?: number => void
 }
 
